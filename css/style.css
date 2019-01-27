@@ -1,0 +1,390 @@
+body {
+    height: 5000px
+}
+/*Start header*/
+header {
+    background: url('../images/header.png') no-repeat fixed center;
+    background-size: cover;
+    position: relative;
+}
+header, .slider .carousel-item {min-height: calc(100vh - 70px)}
+/*End Header*/
+
+/*Start Navbar*/
+header nav {
+    z-index: 1;
+    position: fixed !important;
+    width:100%
+}
+.black {background-color: rgba(0,0,0,.8) !important; transition: all .5s ease-in-out}
+
+.navbar-light .navbar-brand,
+.navbar-light .navbar-nav .nav-link{color: #FFF}
+
+.navbar-light .navbar-brand {font-size: 30px}
+
+.navbar-light .navbar-brand span {color: #17daa3}
+
+.navbar-light .navbar-brand:hover{color:#FFF}
+
+.navbar-light .navbar-nav .nav-link {
+    font-size: 16px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    text-transform: uppercase
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active {color:#17daa3}
+    
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {color:#17daa3}
+
+.navbar-light .navbar-toggler {
+    border-color: #17daa3;
+    background-color: #17daa3
+}
+/*End Navbar*/
+
+/*Start Slider*/
+.slider {padding-top: 70px}
+.slider .carousel-caption {top: 40%}
+.slider .carousel-caption h3 {
+    font-size: 40px;
+    font-weight: 100;
+    margin-bottom: 15px
+}
+
+/******************
+Start Media Queris
+******************/
+@media (max-width: 576px) {
+    .slider .carousel-caption {top: 10% !important}     
+    .carousel-control-next,
+    .carousel-control-prev,
+    .carousel-indicators {display: none}
+}
+
+@media (max-width: 768px) {
+    .slider .carousel-caption {top: 25% }
+    .carousel-control-next,
+    .carousel-control-prev,
+    .carousel-indicators {display: none}
+}
+
+@media (max-width: 992px) {
+    .slider .carousel-caption {top: 25% }
+    
+    .carousel-control-next,
+    .carousel-control-prev {display: none}
+}
+/******************
+End Media Queris
+******************/
+
+.slider .carousel-caption h3 span {font-weight: 800}
+
+.slider .carousel-caption p {margin-bottom: 25px}
+
+.slider .carousel-caption button {
+    background-color:transparent;
+    border: 2px solid #FFF;
+    color: #FFF;
+    border-radius: 161px;
+    padding: 4px 30px;
+    font-size: 18px;
+    outline: none !important;
+    cursor: pointer
+}
+/*End Slider*/
+
+/*Start About US*/
+.about-us article .icon {
+    border-radius: 50%;
+    width: 108px;
+    margin: auto;
+    background-color: #edeff1;
+    margin-bottom: 30px
+}
+.about-us article:hover .icon {background-color: #17daa3}
+.about-us article svg {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #87949e
+}
+.about-us article:hover svg {color: #FFF}
+.about-us article h3 {margin-bottom: 20px}
+
+/*End About US*/
+
+/*Start Sublist*/
+.sublist {background-color: #f9f9fa}
+
+.sublist h2 {margin-bottom: 35px}
+
+.sublist h2::after {display: none}
+/*End Sublist*/
+
+/*Start Sublist-two*/
+.sublist-two {background-color: #FFF}
+
+.sublist-two h2 {margin-bottom: 35px}
+
+.sublist-two h2::after {display: none}
+/*End Sublist-two*/
+
+/*start Testimonials*/
+.testimonials {
+    background-image: url('../images/testi.png');
+    background-size: cover;
+    position: relative;
+} .testimonials, .testimonials .carousel-item {min-height: 400px}
+
+.testimonials .carousel-item .carousel-caption{top: 25%}
+
+.testimonials .carousel-item img {
+    width: 55px;
+    margin-bottom: 1rem;
+}
+.testimonials .carousel-item p span {color: #17daa3}
+
+.testimonials .carousel-item label {font-size: 13px}
+.testimonials .carousel-item label span {font-weight: bold}
+/*End Testimonials*/
+
+/*Start Services*/
+.our-services {
+    background-color: #f9f9fa;
+    padding-bottom: 0
+}
+
+.our-services article .icon {
+    width: 60px;
+    margin-right: 20px;
+    float: left
+}
+.our-services article svg {
+    background-color: #FFF;
+    color: #17daa3;
+    padding: 10px;
+    border-radius: 50%;
+    width: 1em !important
+}
+.our-services article .desc {
+    float: left;
+    margin-top: 5px;
+    width: calc(100% - 80px)
+}
+.our-services article .desc h3 {
+    color: #576671;
+    margin-bottom: 20px
+}
+/*End Services*/
+ /*Start Our Team*/
+.our-team.main-padding {padding-bottom: 0}
+.our-team figure {
+    margin: 0;
+    overflow: hidden
+}
+.our-team img {
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    
+}
+.our-team figure figcaption {
+    background-color: rgba(23,218,163,.8);
+    position: absolute;
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    overflow: hidden;
+    transition: height .3s ease-in
+}
+.our-team figure:hover figcaption {
+    height: 100%
+}
+.our-team figure figcaption .caption {
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    color: #FFF
+}
+/*End Our Team*/
+
+/*Start Price Table*/
+.price-table {
+    background-color: #f9f9fa;
+    padding-bottom: 40px
+}
+
+.price-table article {
+    background-color: #FFF;
+    margin-bottom:  40px    
+}
+
+.price-table article .table-head {
+    padding: 25px 25px;
+    border-bottom: 1px solid #eeeff1
+}
+
+.price-table article .table-head h3 {
+    font-size: 2.75rem;
+    color: #17daa3 
+}
+
+.price-table article .table-head span {color: #c9cfd3}
+
+.price-table article ul {padding: 25px 25px}
+
+.price-table article ul li {
+    padding: 5px 0;
+    color: #a5aeb6
+}
+.price-table button {
+    border-radius: 0;
+    width: 100%;
+    font-weight: 600
+}
+/*End Price Table*/
+
+/*Start Section Map*/
+.map .sec-caption h2 {margin-bottom: 35px}
+
+.map .sec-caption h2::after {display: none}
+
+.map img {max-width:100%}
+
+/*End Section Map*/
+
+/*Start Section Try Template*/
+.try-temp {
+    background: url('../images/try-temp.png') no-repeat center center;
+    background-size: cover
+}
+.try-temp h2 {
+    color: #FFF;
+    margin-bottom: 30px
+}
+.try-temp h2 span {font-size: 50px}
+/*End Section Try Template*/
+
+/*Start Footer*/
+footer {padding: 10px 0;
+border-top:2px solid #17daa3}
+
+footer p {
+    margin: 0 ;
+    font-size: 20px;
+    margin-bottom: 15px !important
+}
+footer p span {color: #17daa3}
+footer ul {margin-bottom: 0}
+
+footer ul li {
+    display: inline-block;
+    margin-left: 30px
+}
+footer a {color: #17daa3}
+/*End Footer*/
+
+/******************
+Start My Frame Work 
+******************/
+.main-padding {
+    padding-top: 70px;
+    padding-bottom: 70px
+}
+.sec-heading {color: #576671}
+.sec-heading::after {
+    content: "";
+    width: 20px;
+    height: 2px;
+    background-color: #17daa3;
+    display: block;
+    margin: 20px auto
+}
+.main-p {
+    color: #87949e;
+    margin-bottom:70px
+}
+
+.overlay {
+    background-color: rgba(0,0,0,.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0
+}
+
+.main-btn {
+    background-color: #17daa3;
+    border: none;
+    color: #FFF;
+    border-radius: 161px;
+    padding: 4px 30px;
+    font-size: 18px;
+    outline: none !important;
+    cursor: pointer
+}
+.main-btn:hover {
+    background-color: #18bb8d;
+}
+/******************
+End My Frame Work 
+******************/
+
+/******************
+Start Media Queris
+******************/
+
+@media (max-width: 576px) {
+    
+    .main-padding {
+        padding-top: 40px;
+        padding-bottom: 40px
+    }
+    
+    .our-services {padding-bottom: 10px}
+    
+    .our-team, .price-table, .map {padding-bottom: 0}
+    
+    .main-p{ margin-bottom: 30px}    
+}
+
+@media (max-width: 768px) {
+    
+    .main-padding {
+        padding-top: 50px;
+        padding-bottom: 50px
+    }
+    
+    .our-services {padding-bottom: 20px}
+    
+    .our-team, .map {padding-bottom: 0}
+    
+    .price-table {padding-bottom: 10px}
+    
+    .main-p{ margin-bottom: 40px} 
+}
+
+@media (max-width: 992px) {
+    .main-padding {
+        padding-top: 60px;
+        padding-bottom: 60px
+    }
+    
+    .our-services {padding-bottom: 30px}
+    
+    .our-team, .map {padding-bottom: 0}
+    
+    .price-table {padding-bottom: 20px}
+    
+    .main-p{ margin-bottom: 50px} 
+}
+
+/******************
+End Media Queris
+******************/
